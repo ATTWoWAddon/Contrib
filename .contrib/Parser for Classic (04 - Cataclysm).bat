@@ -1,1 +1,1 @@
-"Parser.exe" config=parser.classic.cata.config
+"Parser/Parser.exe" config=parser.classic.cata.config

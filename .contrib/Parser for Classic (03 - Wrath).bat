@@ -1,1 +1,1 @@
-"Parser.exe" config=parser.classic.wrath.config
+"Parser/Parser.exe" config=parser.classic.wrath.config

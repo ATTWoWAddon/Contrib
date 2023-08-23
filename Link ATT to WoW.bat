@@ -1,8 +1,4 @@
-:: Hard link retail ATT to PTR folder
-:: This needs to be executed from the _retail_ folder!
-:: This needs to be run as administrator, please execute it from the command line so you can see if there are any errors!
-:: If you have previously run this script, you may need to manually remove the symbolic links first (delete them in file explorer in the destination folder, verify they didn't vanish in the source folder, if they did grab them from git again). Then run this script again and verify that all the links are in place.
-
+:: Run this batch script to link the AllTheThings addon with all non-PTR versions of the game.
 @echo off
 
 call :link_cdb
@@ -16,7 +12,6 @@ if exist "%~1\" (
 	call :link_expansion "%~1\_classic_"
 	call :link_expansion "%~1\_classic_era_"
 	call :link_expansion "%~1\_retail_"
-	call :link_expansion "%~1\_cata_"
 )
 EXIT /B 0
 

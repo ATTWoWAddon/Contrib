@@ -1,1 +1,1 @@
-"Parser.exe"
+"Parser/Parser.exe"
