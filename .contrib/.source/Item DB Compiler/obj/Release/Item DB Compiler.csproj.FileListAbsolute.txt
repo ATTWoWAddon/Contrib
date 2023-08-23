@@ -1,0 +1,21 @@
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Release\Item DB Compiler.exe.config
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Release\Item DB Compiler.exe
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Release\Item DB Compiler.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Release\KeraLua.dll
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Release\NLua.dll
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Release\NLua.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Release\Item DB Compiler.csproj.CoreCompileInputs.cache
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Release\Item DB Compiler.csproj.CopyComplete
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Release\Item DB Compiler.exe
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Release\Item DB Compiler.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\.raw\Item DB Compiler.exe.config
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\.raw\Item DB Compiler.exe
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\.raw\Item DB Compiler.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\.tools\Item DB Compiler.exe.config
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\.tools\Item DB Compiler.exe
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\.tools\Item DB Compiler.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Parser\Item DB Compiler.exe.config
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Parser\Item DB Compiler.exe
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Parser\Item DB Compiler.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Release\Item DB Compiler.csproj.AssemblyReference.cache
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Release\Item DB Compiler.csproj.SuggestedBindingRedirects.cache

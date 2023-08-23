@@ -1,0 +1,8 @@
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Parser\Parser.exe.config
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Parser\Parser.exe
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Parser\Parser.pdb
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Parser\obj\x86\Release\Parser.csproj.AssemblyReference.cache
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Parser\obj\x86\Release\Parser.csproj.CoreCompileInputs.cache
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Parser\obj\x86\Release\Parser.csproj.CopyComplete
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Parser\obj\x86\Release\Parser.exe
+G:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Parser\obj\x86\Release\Parser.pdb

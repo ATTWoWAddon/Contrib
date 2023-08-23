@@ -1,0 +1,1 @@
+"Parser.exe" debug baseconfig=parser.config config=parser.debug.config > log_debug.txt

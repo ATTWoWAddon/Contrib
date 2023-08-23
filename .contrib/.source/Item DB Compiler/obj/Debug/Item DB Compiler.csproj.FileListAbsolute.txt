@@ -1,0 +1,12 @@
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Debug\Item DB Compiler.exe.config
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Debug\Item DB Compiler.exe
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Debug\Item DB Compiler.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Debug\KeraLua.dll
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Debug\NLua.dll
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\bin\Debug\NLua.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Debug\Item DB Compiler.csproj.CoreCompileInputs.cache
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Debug\Item DB Compiler.csproj.CopyComplete
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Debug\Item DB Compiler.exe
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Debug\Item DB Compiler.pdb
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Debug\Item DB Compiler.csproj.AssemblyReference.cache
+D:\World of Warcraft\_retail_\Interface\AddOns\AllTheThings\.contrib\Source Code\Item DB Compiler\obj\Debug\Item DB Compiler.csproj.SuggestedBindingRedirects.cache
