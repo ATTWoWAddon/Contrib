@@ -4,3 +4,6 @@
 [submodule "AllTheThings"]
 	path = AllTheThings
 	url = https://github.com/ATTWoWAddon/AllTheThings
+[submodule ".db"]
+	path = .db
+	url = https://github.com/ATTWoWAddon/Database
