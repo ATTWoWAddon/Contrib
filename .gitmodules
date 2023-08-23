@@ -4,3 +4,6 @@
 [submodule ".cdb"]
 	path = .cdb
 	url = https://github.com/ATTWoWAddon/CDB
+[submodule ".db"]
+	path = .db
+	url = https://github.com/ATTWoWAddon/Database
