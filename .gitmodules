@@ -1,0 +1,3 @@
+[submodule "AllTheThings"]
+	path = AllTheThings
+	url = https://github.com/ATTWoWAddon/AllTheThings
