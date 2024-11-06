@@ -1,0 +1,43 @@
+name: Update Submodules and Use Change Log as Commit Message
+
+on:
+  push:
+    branches:
+      - main  # Adjust this branch name as needed
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  update_submodules_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      
+      - name: Update Submodules
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+          
+      - name: Generate Change Log
+        id: generate_changelog
+        run: |
+          # Example: Generate change logs for all submodules
+          changelog=$(git submodule foreach '
+            echo "Changes in $name:"
+            git log --pretty=format:"- %s" origin/main..HEAD
+            echo ""
+          ')
+          echo "::set-output name=changelog::$changelog"
+          
+      - name: Commit with Submodules Change Log
+        run: |
+          git config --global user.email "actions@example.com"
+          git config --global user.name "GitHub Actions"
+          git commit -m "${{ steps.generate_changelog.outputs.changelog }}" || echo "No changes to commit"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push || echo "No changes to commit"
