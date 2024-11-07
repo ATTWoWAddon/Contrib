@@ -2,5 +2,6 @@
 @echo off
 
 git pull --recurse-submodules
+git submodule update --remote --recursive
 
 goto :EOF
