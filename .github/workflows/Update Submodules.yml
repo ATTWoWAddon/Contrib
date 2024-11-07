@@ -15,28 +15,27 @@ jobs:
         shell: bash
 
     steps:
-    # Checkout the repository to the GitHub Actions runner
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.CI_TOKEN }}
-        submodules: true
-          
-      - name: Generate Change Log
-        id: generate_changelog
-        run: |
-          # Generate change logs for all submodules
-          changelog=$(git submodule foreach 'git log --pretty=format:"%an: %s" HEAD..origin/main')
-          echo "$changelog"
-          echo "changelog=$changelog" >> $GITHUB_OUTPUT
-      
-      - name: Update Submodules
-        run: |
-          git pull --recurse-submodules
-          git submodule update --remote --recursive
-          
-      - name: Commit Change Log
-        run: |
+        - name: Checkout
+            uses: actions/checkout@v2
+            with:
+            token: ${{ secrets.CI_TOKEN }}
+            submodules: true
+
+        - name: Generate Change Log
+            id: generate_changelog
+            run: |
+                # Generate change logs for all submodules
+                changelog=$(git submodule foreach 'git log --pretty=format:"%an: %s" HEAD..origin/main')
+                echo "$changelog"
+                echo "changelog=$changelog" >> $GITHUB_OUTPUT
+
+        - name: Update Submodules
+            run: |
+            git pull --recurse-submodules
+            git submodule update --remote --recursive
+
+        - name: Commit Change Log
+            run: |
             git config --global user.name 'Git bot'
             git config --global user.email 'bot@noreply.github.com'
             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
