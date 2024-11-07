@@ -1,0 +1,42 @@
+name: Update Submodules
+
+on:
+  push:
+    branches:
+      - main  # Adjust this branch name as needed
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  update_submodules_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      
+      - name: Fetch
+        run: |
+          git fetch --recurse-submodules
+          
+      - name: Generate Change Log
+        id: generate_changelog
+        run: |
+          # Generate change logs for all submodules
+          changelog=$(git submodule foreach 'git log --pretty=format:"%an: %s" HEAD..origin/main')
+          echo "changelog=$changelog" >> $GITHUB_OUTPUT
+      
+      - name: Update Submodules
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+          
+      - name: Commit Change Log
+        run: |
+            git config --global user.name 'Git bot'
+            git config --global user.email 'bot@noreply.github.com'
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+            git commit -am "${{ steps.generate_changelog.outputs.changelog }}" && git push || echo "No changes to commit"
