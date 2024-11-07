@@ -23,19 +23,19 @@ jobs:
             submodules: true
 
         - name: Generate Change Log
-            id: generate_changelog
-            run: |
+          id: generate_changelog
+          run: |
                 changelog=$(git submodule foreach 'git log --pretty=format:"%an: %s" HEAD..origin/main')
                 echo "$changelog"
                 echo "changelog=$changelog" >> $GITHUB_OUTPUT
 
         - name: Update Submodules
-            run: |
+          run: |
             git pull --recurse-submodules
             git submodule update --remote --recursive
 
         - name: Commit Change Log
-            run: |
+          run: |
             git config --global user.name 'Git bot'
             git config --global user.email 'bot@noreply.github.com'
             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
