@@ -25,9 +25,7 @@ jobs:
         - name: Generate Change Log
           id: generate_changelog
           run: |
-                changelog=$(git submodule foreach 'git log --pretty=format:"%an: %s" HEAD..origin/main')
-                echo "$changelog"
-                echo "changelog=$changelog" >> $GITHUB_OUTPUT
+            echo "changelog=$(git submodule foreach 'git log --pretty=format:"%an: %s" HEAD..origin/main' | xargs)" >> $GITHUB_OUTPUT
 
         - name: Update Submodules
           run: |
