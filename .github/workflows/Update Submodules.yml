@@ -7,6 +7,7 @@ permissions: write-all
 
 jobs:
   sync:
+    name: 'Update Submodules'
     runs-on: ubuntu-latest
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
@@ -18,8 +19,8 @@ jobs:
         - name: Checkout
             uses: actions/checkout@v2
             with:
-            token: ${{ secrets.CI_TOKEN }}
-            submodules: true
+                token: ${{ secrets.CI_TOKEN }}
+                submodules: true
 
         - name: Generate Change Log
             id: generate_changelog
